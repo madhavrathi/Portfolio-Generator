@@ -1,155 +1,30 @@
 import React, { Component } from 'react';
-import Particles from 'react-particles-js';
-import back from './images/back.jpg';
+import Particles from './components/Particles';
+import Intro from './components/Intro/intro.react';
+import { Switch, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom'
+import './App.css';
 
 class App extends Component{
 
     render(){
-      const backStyle = {
-        backgroundImage: `url(${back})`,
-        backgroundSize: 'cover',
-        backgroundAttachment: 'fixed',
-        width: '100%',
-        height: '100%',
-        display: 'inline-block'
+      const particleStyle = {
+        position: 'relative',
+        zIndex: -100
       }
 
-      const contentStyle = {
-        position: 'absolute',
-        color: 'white',
-        margin: '0px 10px',
-        textAlign: 'center',
-        zIndex: 10
-      }
         return (
-          <div style={backStyle}>
-            <div style={contentStyle}>
-              <h1>HELL NO!</h1>
-              <h1>HELL NO!</h1>
-              <h1>HELL NO!</h1>
-              <h1>HELL NO!</h1>
-              <h1>HELL NO!</h1>
-              <h1>HELL NO!</h1>
-              <h1>HELL NO!</h1>
-              <h1>HELL NO!</h1>
-              <h1>HELL NO!</h1>
-              <h1>HELL NO!</h1>
-              <h1>HELL NO!</h1>
-              <h1>HELL NO!</h1>
-              <h1>HELL NO!</h1>
-              <h1>HELL NO!</h1>
-              <h1>HELL NO!</h1>
-              <h1>HELL NO!</h1>
-              <h1>HELL NO!</h1>
-              <h1>HELL NO!</h1>
-              <h1>HELL NO!</h1>
-              <h1>HELL NO!</h1>
+          <div>
+            <div className='container borderXwidth'>
+              <Link to="/"><a>Home</a></Link>
+              <Link to="/about"><a>About</a></Link>
+              <Link to="/portfolio"><a>Portfolio</a></Link>
+              <Link to="/blog"><a>Blog</a></Link>
+              <Link to="/contact"><a>Contact</a></Link>
             </div>
-            <Particles params={{
-  "particles": {
-    "number": {
-      "value": 100,
-      "density": {
-        "enable": true,
-        "value_area": 962.0472365193136
-      }
-    },
-    "color": {
-      "value": "#ffffff"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      }
-    },
-    "opacity": {
-      "value": 0.5,
-      "random": false,
-      "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 3,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 6,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "grab"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "repulse"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 400,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 400,
-        "size": 40,
-        "duration": 2,
-        "opacity": 8,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
-}}/>
+            <Switch>
+              <Route exact path='/' component={Intro}/>
+            </Switch>
           </div>
         );
     };
