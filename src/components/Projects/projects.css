@@ -122,7 +122,7 @@ img {
   overflow: hidden;
 }
 .card:hover .card__image {
-  filter: blur(0px);
+  filter: grayscale(0);
 }
 .card__content {
   display: -webkit-box;
@@ -143,8 +143,8 @@ img {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
   transition: filter .3s linear;
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
   overflow: hidden;
   position: relative;
 }

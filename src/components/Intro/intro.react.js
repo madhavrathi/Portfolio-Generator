@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import $ from "jquery";
 import madhav from '../../images/Madhav.jpeg';
-import { Button, Icon } from 'semantic-ui-react';
+import resume from '../../images/resume.jpeg';
+import { Button, Icon, Modal, Image } from 'semantic-ui-react';
 import './css/intro.css';
 class intro extends Component {
 
@@ -21,32 +22,26 @@ class intro extends Component {
             Hello, I am <span className='name'> Madhav Rathi</span>
           </center>
 
-          <center>
-            <a target='_blank' href='https://docs.google.com/document/d/1AvT9Gw0DBPGLelz1AIdB0Clor4Jk2MTZLZZDqTGPO2U/edit?usp=sharing'>
-              <button className="btn_r btn-1 btn-1e">RESUME</button>
-            </a>
-          </center>
+          <Modal trigger={(<center>
+                            <button className="btn_r btn-1 btn-1e">RESUME</button>
+                          </center>)}>
+            <Modal.Content image>
+              <Image wrapped src={resume} />
+            </Modal.Content>
+          </Modal>
+
+
 
           <center className='bottom_social'>
-            <Button target='_blank' href='https://www.facebook.com/madhav.rathi.9' color='facebook'>
-              <Icon name='facebook' /> Facebook
-            </Button>
+            <Button circular target='_blank' href='https://www.facebook.com/madhav.rathi.9' color='facebook' size='big' icon='facebook' />
             {' '}
-            <Button target='_blank' href='https://twitter.com/mdhvrthi' color='twitter'>
-              <Icon name='twitter' /> Twitter
-            </Button>
+            <Button circular target='_blank' href='https://twitter.com/mdhvrthi' color='twitter' size='big' icon='twitter' />
             {' '}
-            <Button target='_blank' href='https://plus.google.com/u/0/101763201361821080686' color='google plus'>
-              <Icon name='google plus' /> Google Plus
-            </Button>
+            <Button circular target='_blank' href='https://github.com/madhavrathi' color='github' size='big' icon='github' />
             {' '}
-            <Button target='_blank' href='https://www.linkedin.com/in/madhav-rathi-120b57129/' color='linkedin'>
-              <Icon name='linkedin' /> LinkedIn
-            </Button>
+            <Button circular target='_blank' href='https://www.linkedin.com/in/madhav-rathi-120b57129/' color='linkedin' size='big' icon='linkedin' />
             {' '}
-            <Button target='_blank' href='https://www.instagram.com/madhav_rathi/' color='instagram'>
-              <Icon name='instagram' /> Instagram
-            </Button>
+            <Button circular target='_blank' href='https://www.instagram.com/madhav_rathi/' color='instagram' size='big' icon='instagram' />
           </center>
         </div>
       );

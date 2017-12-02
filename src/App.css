@@ -79,7 +79,7 @@ body {
 .fullscreen-menu ul {
   position: absolute;
   top: 50%;
-  left: 20%;
+  margin: 0% 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: left;
@@ -136,14 +136,6 @@ body {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
   opacity: 1;
-}
-
-.section {
-  margin: 0 10%;
-}
-
-.project_section {
-  margin-top: 3em;
 }
 
 .bold {
