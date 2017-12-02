@@ -5,20 +5,20 @@ const Particle = (
   <Particles params={{
 "particles": {
 "number": {
-"value": 70,
+"value": 100,
 "density": {
 "enable": true,
 "value_area": 962.0472365193136
 }
 },
 "color": {
-"value": "#000000"
+"value": "#fff"
 },
 "shape": {
 "type": "circle",
 "stroke": {
 "width": 0,
-"color": "#000000"
+"color": "#fff"
 },
 "polygon": {
 "nb_sides": 5

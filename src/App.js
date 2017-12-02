@@ -18,19 +18,23 @@ class App extends Component{
 
         return (
           <div>
-            <div className='container borderXwidth'>
-              <Link to="/"><a>Home</a></Link>
-              <Link to="/about"><a>About</a></Link>
-              <Link to="/work"><a>Work</a></Link>
-              <Link to="/projects"><a>Projects</a></Link>
-              <Link to="/blog"><a>Blog</a></Link>
+            <div className='particles'>
             </div>
-            <Switch>
-              <Route exact path='/' component={Intro}/>
-              <Route exact path='/about' component={About}/>
-              <Route exact path='/work' component={Work}/>
-              <Route exact path='/projects' component={Projects}/>
-            </Switch>
+            <div className='stuff'>
+              <div className='container borderXwidth'>
+                <Link to="/"><a>Home</a></Link>
+                <Link to="/about"><a>About</a></Link>
+                <Link to="/work"><a>Work</a></Link>
+                <Link to="/projects"><a>Projects</a></Link>
+              </div>
+              <Switch>
+                <Route exact path='/' component={Intro}/>
+                <Route exact path='/about' component={About}/>
+                <Route exact path='/work' component={Work}/>
+                <Route exact path='/projects' component={Projects}/>
+              </Switch>
+            </div>
+
           </div>
         );
     };

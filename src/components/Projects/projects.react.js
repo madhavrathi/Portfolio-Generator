@@ -34,8 +34,10 @@ class Projects extends Component {
                 <div className="card__content">
                   <div className="card__title">Meme Generator</div>
                   <div className="language">Android</div>
-                  <p className="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
-                  <button className="btn btn--block card__btn">Button</button>
+                  <p className="card__text">Cool Application for creating memes with Top and Bottom Text. Different Images can be loaded. This is still in development </p>
+                  <center>
+                    <a style={{margin: '3%'}} target='_blank' href='https://github.com/madhavrathi/Memegenerator'><button className="btn draw-border">{<Icon name='github' size='large' />} GITHUB</button></a>
+                  </center>
                 </div>
               </div>
             </li>
@@ -45,19 +47,25 @@ class Projects extends Component {
                 <div className="card__content">
                   <div className="card__title">SUSI.AI Web Chat Frontend</div>
                   <div className="language">ReactJS</div>
-                  <p className="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
-                  <button className="btn btn--block card__btn">Button</button>
+                  <p className="card__text">Susi is an artificial intelligence combining pattern matching, internet data, data flow principles and inference engine principles.SUSI.AI web chat is a front-end that is developed for web access of SUSI. </p>
+                  <center>
+                    <a target='_blank' href='https://github.com/fossasia/chat.susi.ai'  style={{margin: '3%'}} > <button className="btn draw-border">{<Icon name='github' size='large' />} GITHUB</button></a>
+                    <a target='_blank' href='https://chat.susi.ai/' style={{margin: '3%'}} ><button className="btn draw-border">{<Icon name='world' size='large' />} LIVE</button></a>
+                  </center>
                 </div>
               </div>
             </li>
             <li className="cards__item">
               <div className="card">
-                <div style={{ backgroundImage: `url(${memegenerator})` }} className="card__image"></div>
+                <div style={{ backgroundImage: `url(${rgb})` }} className="card__image"></div>
                 <div className="card__content">
-                  <div className="card__title">Meme Generator</div>
-                  <div className="language">Android</div>
-                  <p className="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
-                  <button className="btn btn--block card__btn">Button</button>
+                  <div className="card__title">RGB Color Game</div>
+                  <div className="language">JavaScript</div>
+                  <p className="card__text">This is basically a color guessing game based on javascript. There are two levels of the game : EASY and HARD. </p>
+                  <center>
+                    <a target='_blank' href='https://github.com/madhavrathi/rgbColourGame'  style={{margin: '3%'}}><button className="btn draw-border">{<Icon name='github' size='large' />} GITHUB</button></a>
+                    <a target='_blank' href='https://madhavrathi.github.io/rgbColourGame/'  style={{margin: '3%'}}><button className="btn draw-border">{<Icon name='world' size='large' />} LIVE</button></a>
+                  </center>
                 </div>
               </div>
             </li>

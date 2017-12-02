@@ -1,3 +1,64 @@
+.draw-border {
+  box-shadow: inset 0 0 0 4px #fff;
+  color: #58afd1;
+  -webkit-transition: color 0.25s 0.08333s;
+  transition: color 0.25s 0.08333s;
+  position: relative;
+}
+.draw-border::before, .draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+.draw-border:hover {
+  color: #58afd1;
+}
+.draw-border:hover::before, .draw-border:hover::after {
+  border-color: #58afd1;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+.draw-border:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+          transition-delay: 0s, 0s, 0.25s;
+}
+.draw-border:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+          transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 100 1rem 'Montserrat', sans-serif;
+  text-decoration: none;
+  user-select: none;
+  letter-spacing: 1px;
+  color: white;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+}
+.btn:focus {
+  outline: 2px dotted #55d7dc;
+}
 
 *,
 *::before,
@@ -20,17 +81,6 @@ img {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
-}
-.btn {
-  background-color: white;
-  border: 1px solid #cccccc;
-  color: #696969;
-  padding: 0.5rem;
-  text-transform: lowercase;
-}
-.btn--block {
-  display: block;
-  width: 100%;
 }
 .cards {
   display: -webkit-box;
@@ -72,8 +122,7 @@ img {
   overflow: hidden;
 }
 .card:hover .card__image {
-  -webkit-filter: contrast(100%);
-          filter: contrast(100%);
+  filter: blur(0px);
 }
 .card__content {
   display: -webkit-box;
@@ -89,19 +138,15 @@ img {
   padding: 1rem;
 }
 .card__image {
-  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
-  -webkit-filter: contrast(70%);
-          filter: contrast(70%);
+  transition: filter .3s linear;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
   overflow: hidden;
   position: relative;
-  -webkit-transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
 }
 .card__image::before {
   content: "";
@@ -112,18 +157,6 @@ img {
   .card__image::before {
     padding-top: 66.6%;
   }
-}
-.card__image--flowers {
-  background-image: url(https://unsplash.it/800/600?image=82);
-}
-.card__image--river {
-  background-image: url(https://unsplash.it/800/600?image=11);
-}
-.card__image--record {
-  background-image: url(https://unsplash.it/800/600?image=39);
-}
-.card__image--fence {
-  background-image: url(https://unsplash.it/800/600?image=59);
 }
 .card__title {
   color: #fff;

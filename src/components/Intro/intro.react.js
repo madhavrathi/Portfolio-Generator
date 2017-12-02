@@ -10,9 +10,7 @@ class intro extends Component {
     document.title = 'Madhav Rathi';
     //  Scrolling to top of page when component loads
     $('html, body').animate({ scrollTop: 0 }, 'fast');
-  }
 
-  render(){
     const contentStyle = {
       position: 'relative',
       zIndex: 100,
@@ -72,6 +70,10 @@ setInterval(() => {
 	cleanUp();
 
 }, 3500);
+
+  }
+
+  render(){
 
       return (
         <div className='section'>
