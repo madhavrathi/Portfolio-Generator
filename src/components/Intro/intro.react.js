@@ -37,7 +37,7 @@ class intro extends Component {
             {' '}
             <Button circular target='_blank' href='https://twitter.com/mdhvrthi' color='twitter' size='big' icon='twitter' />
             {' '}
-            <Button circular target='_blank' href='https://github.com/madhavrathi' color='github' size='big' icon='github' />
+            <Button circular target='_blank' href='https://github.com/madhavrathi' size='big' icon='github' />
             {' '}
             <Button circular target='_blank' href='https://www.linkedin.com/in/madhav-rathi-120b57129/' color='linkedin' size='big' icon='linkedin' />
             {' '}
