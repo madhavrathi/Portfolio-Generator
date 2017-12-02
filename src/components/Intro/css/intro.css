@@ -7,6 +7,75 @@
 
 }
 
+.my_image {
+  margin:0 40%;
+  width:20%;
+  border-radius: 50%;
+}
+
+#centerMe {
+  margin: 7% 20%;
+  height: 40px;
+  width: 980px;
+}
+
+.title{
+  color:white;
+  font-family:Tahoma;
+  float:left;
+  font-size:40px;
+  line-height:40px;
+  padding:0 10px;
+  text-shadow:none;
+  font-weight:100;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  font-smoothing: antialiased
+}
+
+.hidden{
+  display: none;
+}
+
+.floatLeft {
+  float:left;
+}
+
+#textWrapper {
+  height: 40px;
+  width: 550px;
+  float: right;
+}
+
+.bottom {
+  margin: 75px 0 0 0;
+  opacity:0;
+}
+
+.live {
+  margin:0;
+}
+
+.rotate {
+  -webkit-transition:all 0.9s;
+  -moz-transition:all 0.9s;
+  -ms-transition:all 0.9s;
+  -o-transition:all 0.9s;
+  transition:all 0.9s;
+  -webkit-transition-timing-function:ease-out;
+  -moz-transition-timing-function:ease-out;
+  -ms-transition-timing-function:ease-out;
+  -o-transition-timing-function:ease-out;
+  transition-timing-function:ease-out;
+  -webkit-transform:rotate(-360deg);
+  -moz-transform:rotate(-360deg);
+  -ms-transform:rotate(-360deg);
+  -o-transform:rotate(-360deg);
+  transform:rotate(-360deg);
+}
+
 div.container
 {
   font-family: strasuaregular;

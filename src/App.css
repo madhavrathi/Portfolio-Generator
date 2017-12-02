@@ -1,7 +1,14 @@
-.backImage {
-  background: url(images/back.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.section {
+  margin: 0 10%;
+}
+
+.project_section {
+  margin: 3em 200px;
+}
+
+.bold {
+  font-weight: bolder;
+}
+.white {
+  color: white;
 }
