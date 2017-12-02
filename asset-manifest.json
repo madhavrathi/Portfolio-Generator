@@ -1,9 +1,13 @@
 {
-  "main.css": "static/css/main.240298e1.css",
-  "main.css.map": "static/css/main.240298e1.css.map",
-  "main.js": "static/js/main.e325ecb4.js",
-  "main.js.map": "static/js/main.e325ecb4.js.map",
+  "main.css": "static/css/main.d23e87a0.css",
+  "main.css.map": "static/css/main.d23e87a0.css.map",
+  "main.js": "static/js/main.6fa3bef1.js",
+  "main.js.map": "static/js/main.6fa3bef1.js.map",
+  "static/media/Madhav.jpeg": "static/media/Madhav.998f12bc.jpeg",
   "static/media/back.jpg": "static/media/back.fdc43f8d.jpg",
+  "static/media/memegen.png": "static/media/memegen.dea106c5.png",
+  "static/media/rgb.png": "static/media/rgb.b55d091d.png",
   "static/media/strasua-webfont.woff": "static/media/strasua-webfont.f4f7c0d0.woff",
-  "static/media/strasua-webfont.woff2": "static/media/strasua-webfont.4793c4c2.woff2"
+  "static/media/strasua-webfont.woff2": "static/media/strasua-webfont.4793c4c2.woff2",
+  "static/media/susi.png": "static/media/susi.5580eb1b.png"
 }
