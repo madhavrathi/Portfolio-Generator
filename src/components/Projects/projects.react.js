@@ -26,66 +26,43 @@ class Projects extends Component {
         <center style={{marginTop: '15px'}}>
           <div className="next-heading white"><h1>Projects</h1></div>
         </center>
-        <div>
-<ul class="cards">
-  <li class="cards__item">
-    <div class="card">
-      <div class="card__image card__image--fence"></div>
-      <div class="card__content">
-        <div class="card__title">Flex</div>
-        <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
-        <button class="btn btn--block card__btn">Button</button>
-      </div>
-    </div>
-  </li>
-</ul>
-        </div>
-        <center className='project_section'>
-          <Card.Group>
-            <Card
-              centered
-              className='white'
-              image={susi}
-              header='SUSI.AI Web Chat Frontend'
-              meta='ReactJS'
-              description='Susi is an artificial intelligence combining pattern matching, internet data, data flow principles and inference engine principles.SUSI.AI web chat is a front-end that is developed for web access of SUSI.'
-            />
-            <Card
-              centered
-              className='white'
-              image={rgb}
-              header='RGB Color Game'
-              meta='JavaScript'
-              description='This is basically a color guessing game based on javascript. There are two levels of the game : EASY and HARD.'
-            />
-            <Card
-              centered
-              image={memegenerator}
-              header='Meme Generator'
-              meta='Android'
-              description='Cool Application for creating memes with Top and Bottom Text.'
-              extra={(
-                <div>
-                  <Button primary animated
-                    style={{width: '49%', margin:'0px'}}>
-                    <Button.Content visible>Next</Button.Content>
-                    <Button.Content hidden>
-                      <Icon name='right arrow' />
-                    </Button.Content>
-                  </Button>
-                  {' '}
-                  <Button secondary animated='vertical'
-                    style={{width: '49%', margin:'0px'}}>
-                    <Button.Content hidden>Shop</Button.Content>
-                    <Button.Content visible>
-                      <Icon name='shop' />
-                    </Button.Content>
-                  </Button>
+        <div style={{width:'80%', marginLeft: '10%'}} className='project_section'>
+          <ul className="cards">
+            <li className="cards__item">
+              <div className="card">
+                <div style={{ backgroundImage: `url(${memegenerator})` }} className="card__image"></div>
+                <div className="card__content">
+                  <div className="card__title">Meme Generator</div>
+                  <div className="language">Android</div>
+                  <p className="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
+                  <button className="btn btn--block card__btn">Button</button>
                 </div>
-              )}
-            />
-          </Card.Group>
-        </center>
+              </div>
+            </li>
+            <li className="cards__item">
+              <div className="card">
+                <div style={{ backgroundImage: `url(${susi})` }} className="card__image"></div>
+                <div className="card__content">
+                  <div className="card__title">SUSI.AI Web Chat Frontend</div>
+                  <div className="language">ReactJS</div>
+                  <p className="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
+                  <button className="btn btn--block card__btn">Button</button>
+                </div>
+              </div>
+            </li>
+            <li className="cards__item">
+              <div className="card">
+                <div style={{ backgroundImage: `url(${memegenerator})` }} className="card__image"></div>
+                <div className="card__content">
+                  <div className="card__title">Meme Generator</div>
+                  <div className="language">Android</div>
+                  <p className="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
+                  <button className="btn btn--block card__btn">Button</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     );
   };
