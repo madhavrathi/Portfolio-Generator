@@ -1,10 +1,69 @@
-@font-face {
-    font-family: 'strasuaregular';
-    src: url('strasua-webfont.woff2') format('woff2'),
-         url('strasua-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+/* General button style (reset) */
+.btn_r {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
 
+.btn_r:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* Button 1 */
+.btn-1 {
+	border: 3px solid #fff;
+	color: #fff;
+}
+
+/* Button 1e */
+.btn-1e {
+	overflow: hidden;
+}
+
+.btn-1e:after {
+	width: 100%;
+	height: 0;
+	top: 50%;
+	left: 50%;
+	background: #fff;
+	opacity: 0;
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.btn-1e:hover,
+.btn-1e:active {
+	color: #000;
+}
+
+.btn-1e:hover:after {
+	height: 260%;
+	opacity: 1;
+}
+
+.btn-1e:active:after {
+	height: 400%;
+	opacity: 1;
 }
 
 .my_image {
@@ -13,28 +72,32 @@
   border-radius: 50%;
 }
 
-#centerMe {
-  margin: 7% 20%;
-  height: 40px;
-  width: 980px;
+.bottom_social {
+  margin: 3%;
+}
+
+.intro_wrapper {
+  display: flex;
 }
 
 .title{
+  margin: 3%;
   color:white;
-  font-family:Tahoma;
-  float:left;
+  font-family:'Montserrat', sans-serif;
   font-size:40px;
   line-height:40px;
   padding:0 10px;
   text-shadow:none;
-  font-weight:100;
+  font-weight:400;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
   -ms-font-smoothing: antialiased;
   font-smoothing: antialiased
 }
-
+.name {
+  background-color: rgba(0, 0, 0, 0.7);
+}
 .hidden{
   display: none;
 }
@@ -54,74 +117,15 @@
   opacity:0;
 }
 
-.live {
-  margin:0;
-}
-
-.rotate {
-  -webkit-transition:all 0.9s;
-  -moz-transition:all 0.9s;
-  -ms-transition:all 0.9s;
-  -o-transition:all 0.9s;
-  transition:all 0.9s;
-  -webkit-transition-timing-function:ease-out;
-  -moz-transition-timing-function:ease-out;
-  -ms-transition-timing-function:ease-out;
-  -o-transition-timing-function:ease-out;
-  transition-timing-function:ease-out;
-  -webkit-transform:rotate(-360deg);
-  -moz-transform:rotate(-360deg);
-  -ms-transform:rotate(-360deg);
-  -o-transform:rotate(-360deg);
-  transform:rotate(-360deg);
-}
-
-div.container
-{
-  font-family: strasuaregular;
-  margin: 0 auto;
-	padding: 10em 3em;
-	text-align: center;
-}
-
-div.container a
-{
-    color: #FFF;
-    text-decoration: none;
-    font: 20px strasuaregular;
-    margin: 0px 10px;
-    padding: 10px 10px;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
-}
-
-/* Border X get width  */
-div.borderXwidth a:before, div.borderXwidth a:after
-{
-    position: absolute;
-    opacity: 0;
-    width: 0%;
-    height: 2px;
-    content: '';
-    background: #FFF;
-    transition: all 0.3s;
-}
-
-div.borderXwidth a:before
-{
-    left: 0px;
-    top: 0px;
-}
-
-div.borderXwidth a:after
-{
-    right: 0px;
-    bottom: 0px;
-}
-
-div.borderXwidth a:hover:before, div.borderXwidth a:hover:after
-{
-    opacity: 1;
-    width: 100%;
+@media only screen and (max-width: 700px){
+  .my_image {
+    margin:0 30%;
+    width: 40%;
+  }
+  .bottom_social {
+    margin: 5%;
+  }
+  .title{
+    margin: 10%;
+  }
 }
