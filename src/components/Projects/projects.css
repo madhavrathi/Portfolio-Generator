@@ -42,8 +42,8 @@
   -webkit-transition-delay: 0s, 0.25s, 0s;
           transition-delay: 0s, 0.25s, 0s;
 }
-
 .btn {
+  margin: 2%;
   background: none;
   border: none;
   cursor: pointer;

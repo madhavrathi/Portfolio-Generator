@@ -21,7 +21,7 @@ class Work extends Component {
     return(
       <div className='white'>
         <center style={{marginTop: '15px'}}>
-          <div className="next-heading white"><h1>Professional Experience</h1></div>
+          <div className="next-heading white"><h1>Experience</h1></div>
         </center>
         <section id="cd-timeline" className="cd-container">
           <div className="cd-timeline-block">
