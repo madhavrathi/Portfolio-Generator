@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
-import { Icon } from 'semantic-ui-react';
+import work from '../../images/work.png';
 
 class Work extends Component {
 
@@ -26,7 +26,7 @@ class Work extends Component {
         <section id="cd-timeline" className="cd-container">
           <div className="cd-timeline-block">
             <div className="cd-timeline-img cd-picture">
-              <Icon name='code' size='big' style={iconStyle} />
+              <img src={work}></img>
             </div>
             <div className="cd-timeline-content">
               <h2>Google Summer of Code - Intern</h2>
@@ -37,7 +37,7 @@ class Work extends Component {
           </div>
           <div className="cd-timeline-block">
             <div className="cd-timeline-img cd-picture">
-              <Icon name='code' size='big' style={iconStyle} />
+              <img src={work}></img>
             </div>
             <div className="cd-timeline-content">
               <h2>Codeheat - Mentor</h2>
@@ -48,7 +48,7 @@ class Work extends Component {
           </div>
           <div className="cd-timeline-block">
             <div className="cd-timeline-img cd-picture">
-              <Icon name='code' size='big' style={iconStyle} />
+              <img src={work}></img>
             </div>
             <div className="cd-timeline-content">
               <h2>Google Code-In - Mentor</h2>

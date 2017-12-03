@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
-import { Icon } from 'semantic-ui-react';
+import education from '../../images/education.png';
+import star from '../../images/star.png';
 
 class About extends Component {
 
@@ -12,11 +13,6 @@ class About extends Component {
   }
 
   render(){
-    const iconStyle = {
-      width: '100%',
-      display: 'inline-block',
-      margin: '15% auto'
-    }
 
     return(
       <div className='white'>
@@ -26,7 +22,7 @@ class About extends Component {
         <section id="cd-timeline" className="cd-container">
           <div className="cd-timeline-block">
             <div className="cd-timeline-img cd-picture">
-              <Icon name='student' size='big' style={iconStyle} />
+              <img src={education}></img>
             </div>
             <div className="cd-timeline-content">
               <h2>Lovely Public School</h2>
@@ -37,7 +33,7 @@ class About extends Component {
           </div>
           <div className="cd-timeline-block">
             <div className="cd-timeline-img cd-picture">
-              <Icon name='student' size='big' style={iconStyle} />
+              <img src={education}></img>
             </div>
             <div className="cd-timeline-content">
               <h2>Delhi Technological University</h2>
@@ -53,7 +49,7 @@ class About extends Component {
         <div id="cd-timeline" className="cd-container">
           <div className="cd-timeline-block">
             <div className="cd-timeline-img cd-picture">
-              <Icon name='star' size='big' style={iconStyle} />
+              <img src={star}></img>
             </div>
             <div className="cd-timeline-content">
               <h2>E-Cell DTU, Co-Head(Design)</h2>
@@ -66,7 +62,7 @@ class About extends Component {
           </div>
           <div className="cd-timeline-block">
             <div className="cd-timeline-img cd-picture">
-              <Icon name='star' size='big' style={iconStyle} />
+              <img src={star}></img>
             </div>
             <div className="cd-timeline-content">
               <h2>IOSD DTU, Co-Head(Mobile Tech.)</h2>
