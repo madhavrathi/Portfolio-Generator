@@ -80,8 +80,8 @@ body {
   position: absolute;
   top: 50%;
   margin: 0% 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-100%, -50%);
+          transform: translate(-100%, -50%);
   text-align: left;
 }
 .fullscreen-menu ul li {
@@ -131,6 +131,10 @@ body {
   opacity: 1;
   width: 100%;
   height: 100%;
+}
+.fullscreen-menu.active ul {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .fullscreen-menu.active ul li {
   -webkit-transform: translateY(0%);
