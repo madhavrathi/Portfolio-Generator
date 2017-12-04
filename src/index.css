@@ -14,3 +14,17 @@ body {
   background-attachment: fixed;
   background-color: #010213;
 }
+
+h1 {
+  font: 400 2rem 'Montserrat', sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 350px) {
+  h1 {
+    font: 300 2rem 'Montserrat', sans-serif;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+  }
+}
