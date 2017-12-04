@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
-import { Button, Card, Image, Icon } from 'semantic-ui-react'
+import { Icon } from 'semantic-ui-react'
 import memegenerator from '../../images/memegen.png'
 import rgb from '../../images/rgb.png'
 import susi from '../../images/susi.png'
@@ -16,10 +16,6 @@ class Projects extends Component {
   }
 
   render(){
-    const back = {
-      textColor: '#fff',
-      backgroundColor: '#010214'
-    }
 
     return(
       <div className='white'>
@@ -36,7 +32,7 @@ class Projects extends Component {
                   <div className="language">Android</div>
                   <p className="card__text">Cool Application for creating memes with Top and Bottom Text. Different Images can be loaded. This is still in development </p>
                   <center>
-                    <a target='_blank' href='https://github.com/madhavrathi/Memegenerator'><button className="btn draw-border">{<Icon name='github' size='large' />} GITHUB</button></a>
+                    <a rel="noopener noreferrer" target='_blank' href='https://github.com/madhavrathi/Memegenerator'><button className="btn draw-border">{<Icon name='github' size='large' />} GITHUB</button></a>
                   </center>
                 </div>
               </div>
@@ -49,8 +45,8 @@ class Projects extends Component {
                   <div className="language">ReactJS</div>
                   <p className="card__text">Susi is an artificial intelligence combining pattern matching, internet data, data flow principles and inference engine principles.SUSI.AI web chat is a front-end that is developed for web access of SUSI. </p>
                   <center>
-                    <a target='_blank' href='https://github.com/fossasia/chat.susi.ai'> <button className="btn draw-border">{<Icon name='github' size='large' />} GITHUB</button></a>
-                    <a target='_blank' href='https://chat.susi.ai/'><button className="btn draw-border">{<Icon name='world' size='large' />} LIVE</button></a>
+                    <a rel="noopener noreferrer" target='_blank' href='https://github.com/fossasia/chat.susi.ai'> <button className="btn draw-border">{<Icon name='github' size='large' />} GITHUB</button></a>
+                    <a rel="noopener noreferrer" target='_blank' href='https://chat.susi.ai/'><button className="btn draw-border">{<Icon name='world' size='large' />} LIVE</button></a>
                   </center>
                 </div>
               </div>
@@ -63,8 +59,8 @@ class Projects extends Component {
                   <div className="language">JavaScript</div>
                   <p className="card__text">This is basically a color guessing game based on javascript. There are two levels of the game : EASY and HARD. </p>
                   <center>
-                    <a target='_blank' href='https://github.com/madhavrathi/rgbColourGame'><button className="btn draw-border">{<Icon name='github' size='large' />} GITHUB</button></a>
-                    <a target='_blank' href='https://madhavrathi.github.io/rgbColourGame/'><button className="btn draw-border">{<Icon name='world' size='large' />} LIVE</button></a>
+                    <a rel="noopener noreferrer" target='_blank' href='https://github.com/madhavrathi/rgbColourGame'><button className="btn draw-border">{<Icon name='github' size='large' />} GITHUB</button></a>
+                    <a rel="noopener noreferrer" target='_blank' href='https://madhavrathi.github.io/rgbColourGame/'><button className="btn draw-border">{<Icon name='world' size='large' />} LIVE</button></a>
                   </center>
                 </div>
               </div>

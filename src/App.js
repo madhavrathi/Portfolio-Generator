@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Particles from './components/Particles';
 import Intro from './components/Intro/intro.react';
 import Work from './components/Work/work.react';
 import About from './components/About/about.react';

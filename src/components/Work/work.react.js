@@ -12,11 +12,6 @@ class Work extends Component {
   }
 
   render(){
-    const iconStyle = {
-      width: '100%',
-      display: 'inline-block',
-      margin: '15% auto'
-    }
 
     return(
       <div className='white'>
@@ -26,7 +21,7 @@ class Work extends Component {
         <section id="cd-timeline" className="cd-container">
           <div className="cd-timeline-block">
             <div className="cd-timeline-img cd-picture">
-              <img src={work}></img>
+              <img src={work} alt='work'></img>
             </div>
             <div className="cd-timeline-content">
               <h2>Google Summer of Code - Intern</h2>
@@ -37,7 +32,7 @@ class Work extends Component {
           </div>
           <div className="cd-timeline-block">
             <div className="cd-timeline-img cd-picture">
-              <img src={work}></img>
+              <img src={work} alt='work'></img>
             </div>
             <div className="cd-timeline-content">
               <h2>Codeheat - Mentor</h2>
@@ -48,7 +43,7 @@ class Work extends Component {
           </div>
           <div className="cd-timeline-block">
             <div className="cd-timeline-img cd-picture">
-              <img src={work}></img>
+              <img src={work} alt='work'></img>
             </div>
             <div className="cd-timeline-content">
               <h2>Google Code-In - Mentor</h2>

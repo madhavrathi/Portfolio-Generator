@@ -127,7 +127,7 @@
 
 @media only screen and (max-width: 700px){
   .my_image {
-    margin:0 30%;
+    margin: 10% 30% 0% 30%;
     width: 40%;
   }
   .bottom_social {
@@ -144,5 +144,13 @@
   }
   .project_section {
     margin-top: 3em;
+  }
+}
+@media only screen and (max-width: 360px){
+  .name {
+    line-height: 50px;
+  }
+  .btn_r {
+    margin: 5%;
   }
 }

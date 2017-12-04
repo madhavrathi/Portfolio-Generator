@@ -22,7 +22,7 @@ class About extends Component {
         <section id="cd-timeline" className="cd-container">
           <div className="cd-timeline-block">
             <div className="cd-timeline-img cd-picture">
-              <img src={education}></img>
+              <img src={education} alt='education'></img>
             </div>
             <div className="cd-timeline-content">
               <h2>Lovely Public School</h2>
@@ -33,7 +33,7 @@ class About extends Component {
           </div>
           <div className="cd-timeline-block">
             <div className="cd-timeline-img cd-picture">
-              <img src={education}></img>
+              <img src={education} alt='education'></img>
             </div>
             <div className="cd-timeline-content">
               <h2>Delhi Technological University</h2>
@@ -49,7 +49,7 @@ class About extends Component {
         <div id="cd-timeline" className="cd-container">
           <div className="cd-timeline-block">
             <div className="cd-timeline-img cd-picture">
-              <img src={star}></img>
+              <img src={star} alt='star'></img>
             </div>
             <div className="cd-timeline-content">
               <h2>E-Cell DTU, Co-Head(Design)</h2>
@@ -62,7 +62,7 @@ class About extends Component {
           </div>
           <div className="cd-timeline-block">
             <div className="cd-timeline-img cd-picture">
-              <img src={star}></img>
+              <img src={star} alt='star'></img>
             </div>
             <div className="cd-timeline-content">
               <h2>IOSD DTU, Co-Head(Mobile Tech.)</h2>
