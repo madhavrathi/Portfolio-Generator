@@ -135,6 +135,7 @@ body {
 .fullscreen-menu.active ul {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  text-align: center;
 }
 .fullscreen-menu.active ul li {
   -webkit-transform: translateY(0%);
