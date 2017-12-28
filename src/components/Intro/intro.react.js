@@ -33,15 +33,15 @@ class intro extends Component {
 
 
           <center className='bottom_social'>
-            <Button circular target='_blank' href='https://www.facebook.com/madhav.rathi.9' color='facebook' size='big' icon='facebook' />
+            <Button className='raise' circular target='_blank' href='https://www.facebook.com/madhav.rathi.9' color='facebook' size='big' icon='facebook' />
             {' '}
-            <Button circular target='_blank' href='https://twitter.com/mdhvrthi' color='twitter' size='big' icon='twitter' />
+            <Button className='raise' circular target='_blank' href='https://twitter.com/mdhvrthi' color='twitter' size='big' icon='twitter' />
             {' '}
-            <Button circular target='_blank' href='https://github.com/madhavrathi' size='big' icon='github' />
+            <Button className='raise' circular target='_blank' href='https://github.com/madhavrathi' size='big' icon='github' />
             {' '}
-            <Button circular target='_blank' href='https://www.linkedin.com/in/madhav-rathi-120b57129/' color='linkedin' size='big' icon='linkedin' />
+            <Button className='raise' circular target='_blank' href='https://www.linkedin.com/in/madhav-rathi-120b57129/' color='linkedin' size='big' icon='linkedin' />
             {' '}
-            <Button circular target='_blank' href='https://www.instagram.com/madhav_rathi/' color='instagram' size='big' icon='instagram' />
+            <Button className='raise' circular target='_blank' href='https://www.instagram.com/madhav_rathi/' color='instagram' size='big' icon='instagram' />
           </center>
         </div>
       );
