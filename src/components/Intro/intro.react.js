@@ -30,7 +30,7 @@ class intro extends Component {
             </Modal.Content>
           </Modal> */}
           <center>
-            <a target="_blank" href={resume} className="btn_r btn-1 btn-1e">RESUME</a>
+            <a target="_blank" href="https://drive.google.com/file/d/1yoF6hRldyzEXjJpUHE3FXRJ_Qn3edVMN/view?usp=sharing" className="btn_r btn-1 btn-1e">RESUME</a>
           </center>
 
 
