@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import $ from "jquery";
 import madhav from '../../images/Madhav.jpeg';
-import resume from '../../images/resume.jpeg';
+import resume from '../../images/resume.pdf';
 import { Button, Modal, Image } from 'semantic-ui-react';
 import './css/intro.css';
 class intro extends Component {
@@ -22,13 +22,16 @@ class intro extends Component {
             Hello, I am <span className='name'> Madhav Rathi</span>
           </center>
 
-          <Modal trigger={(<center>
+          {/* <Modal trigger={(<center>
                             <button className="btn_r btn-1 btn-1e">RESUME</button>
                           </center>)}>
             <Modal.Content image>
               <Image wrapped src={resume} />
             </Modal.Content>
-          </Modal>
+          </Modal> */}
+          <center>
+            <a target="_blank" href={resume} className="btn_r btn-1 btn-1e">RESUME</a>
+          </center>
 
 
 
