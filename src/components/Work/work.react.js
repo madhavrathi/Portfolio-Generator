@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
+import info from '../info.js';
 import work from '../../images/work.png';
 
 class Work extends Component {
@@ -19,39 +20,21 @@ class Work extends Component {
           <div className="next-heading white"><h1>Experience</h1></div>
         </center>
         <section id="cd-timeline" className="cd-container">
-          <div className="cd-timeline-block">
-            <div className="cd-timeline-img cd-picture">
-              <img src={work} alt='work'></img>
-            </div>
-            <div className="cd-timeline-content">
-              <h2>Google Summer of Code - Intern</h2>
-              <p style={{marginTop:'-1px'}}>FOSSASIA</p>
-              <p>{'Developed ReactJs based front end for SUSI.AI server. Handled various action types(Map, JSON, table, etc.) from server and displayed data to users as per their queries.'}</p>
-              <span className="cd-date bold">{'May 2017 - Aug 2017'}</span>
-            </div>
-          </div>
-          <div className="cd-timeline-block">
-            <div className="cd-timeline-img cd-picture">
-              <img src={work} alt='work'></img>
-            </div>
-            <div className="cd-timeline-content">
-              <h2>Codeheat - Mentor</h2>
-              <p style={{marginTop:'-1px'}}>FOSSASIA</p>
-              <p>{'Monitored students’ work at Codeheat (Coding marathon where students from all around the globe participate and contribute to open source projects of FOSSASIA). Winners are invited to FOSSASIA Summit in Singapore to talk about their journey.'}</p>
-              <span className="cd-date bold">{'Aug 2017 - Present'}</span>
-            </div>
-          </div>
-          <div className="cd-timeline-block">
-            <div className="cd-timeline-img cd-picture">
-              <img src={work} alt='work'></img>
-            </div>
-            <div className="cd-timeline-content">
-              <h2>Google Code-In - Mentor</h2>
-              <p style={{marginTop:'-1px'}}>FOSSASIA</p>
-              <p>{'Mentoring young students(Age: 13 to 17) in their introduction to open source technologies.'}</p>
-              <span className="cd-date bold">{'Nov 2017 - Present'}</span>
-            </div>
-          </div>
+          {info.experience.map((e) =>{
+            return(
+              <div key={e.title} className="cd-timeline-block">
+                <div className="cd-timeline-img cd-picture">
+                  <img src={work} alt='work'></img>
+                </div>
+                <div className="cd-timeline-content">
+                  <h2>{e.title}</h2>
+                  <p style={{fontWeight:'bold',marginTop:'-10px'}}>{e.subTitle}</p>
+                  <p>{e.sum}</p>
+                  <span className="cd-date bold">{e.time}</span>
+                </div>
+              </div>
+            )
+          })}
         </section>
       </div>
     );

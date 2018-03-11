@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import $ from "jquery";
 import madhav from '../../images/Madhav.jpeg';
-import resume from '../../images/resume.pdf';
-import { Button, Modal, Image } from 'semantic-ui-react';
+import { Button} from 'semantic-ui-react';
 import './css/intro.css';
 class intro extends Component {
 
