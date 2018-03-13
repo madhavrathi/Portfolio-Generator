@@ -38,13 +38,13 @@ var info = {
     {
       'title':'Google Code-In - Mentor',
       'subTitle':'FOSSASIA',
-      'time':'Nov 2017 - Jan 2017',
+      'time':'Nov 2017 - Jan 2018',
       'sum':'Mentoring young students(Age: 13 to 17) in their introduction to open source technologies.',
     },
     {
       'title':'Codeheat - Mentor',
       'subTitle':'FOSSASIA',
-      'time':'Aug 2017 - Feb 2017',
+      'time':'Aug 2017 - Feb 2018',
       'sum':'Monitored students’ work at Codeheat (Coding marathon where students from all around the globe participate and contribute to open source projects of FOSSASIA). Winners are invited to FOSSASIA Summit in Singapore to talk about their journey.',
     },
     {
@@ -79,6 +79,14 @@ var info = {
       'live':'https://madhavrathi.github.io/rgbColourGame/',
       'image': rgb
     },
-  ]
+  ],
+  'social':
+    {
+      'facebook':'https://www.facebook.com/madhav.rathi.9',
+      'instagram':'https://www.instagram.com/madhav_rathi/',
+      'github':'https://github.com/madhavrathi',
+      'twitter':'https://twitter.com/mdhvrthi',
+      'linkedin':'https://www.linkedin.com/in/madhav-rathi-120b57129/'
+    }
 }
 export default info;

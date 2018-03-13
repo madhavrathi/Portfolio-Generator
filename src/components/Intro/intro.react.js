@@ -3,6 +3,7 @@ import $ from "jquery";
 import madhav from '../../images/Madhav.jpeg';
 import { Button} from 'semantic-ui-react';
 import './css/intro.css';
+import info from '../info.js';
 class intro extends Component {
 
   componentDidMount() {
@@ -35,15 +36,15 @@ class intro extends Component {
 
 
           <center className='bottom_social'>
-            <Button className='raise' circular target='_blank' href='https://www.facebook.com/madhav.rathi.9' color='facebook' size='big' icon='facebook' />
+            {(info.social.facebook !== '')?<Button className='raise' circular target='_blank' href={info.social.facebook} color='facebook' size='big' icon='facebook' />:''}
             {' '}
-            <Button className='raise' circular target='_blank' href='https://twitter.com/mdhvrthi' color='twitter' size='big' icon='twitter' />
+            {(info.social.twitter !== '')?<Button className='raise' circular target='_blank' href={info.social.twitter} color='twitter' size='big' icon='twitter' />:''}
             {' '}
-            <Button className='raise' circular target='_blank' href='https://github.com/madhavrathi' size='big' icon='github' />
+            {(info.social.github !== '')?<Button className='raise' circular target='_blank' href={info.social.github} size='big' icon='github' />:''}
             {' '}
-            <Button className='raise' circular target='_blank' href='https://www.linkedin.com/in/madhav-rathi-120b57129/' color='linkedin' size='big' icon='linkedin' />
+            {(info.social.linkedin !== '')?<Button className='raise' circular target='_blank' href={info.social.linkedin} color='linkedin' size='big' icon='linkedin' />:''}
             {' '}
-            <Button className='raise' circular target='_blank' href='https://www.instagram.com/madhav_rathi/' color='instagram' size='big' icon='instagram' />
+            {(info.social.instagram !== '')?<Button className='raise' circular target='_blank' href={info.social.instagram} color='instagram' size='big' icon='instagram' />:''}
           </center>
         </div>
       );
