@@ -13,15 +13,12 @@ class intro extends Component {
     $('html, body').animate({ scrollTop: 0 }, 'fast');
   }
   render(){
-
       return (
         <div className='section'>
           <center><img className='my_image' src={madhav} alt='Madhav'></img></center>
-
           <center className="title">
             Hello, I am <span className='name'> Madhav Rathi</span>
           </center>
-
           {/* <Modal trigger={(<center>
                             <button className="btn_r btn-1 btn-1e">RESUME</button>
                           </center>)}>
@@ -32,9 +29,6 @@ class intro extends Component {
           <center>
             <a target="_blank" href="https://drive.google.com/file/d/1yoF6hRldyzEXjJpUHE3FXRJ_Qn3edVMN/view?usp=sharing" className="btn_r btn-1 btn-1e">RESUME</a>
           </center>
-
-
-
           <center className='bottom_social'>
             {(info.social.facebook !== '')?<Button className='raise' circular target='_blank' href={info.social.facebook} color='facebook' size='big' icon='facebook' />:''}
             {' '}
@@ -49,7 +43,5 @@ class intro extends Component {
         </div>
       );
   };
-
 }
-
 export default intro;
