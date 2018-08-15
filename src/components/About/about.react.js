@@ -36,28 +36,6 @@ class About extends Component {
             )
           })}
         </section>
-        <center style={{marginTop: '15px'}}>
-          <div className="next-heading"><h1>Positions of Responsibility</h1></div>
-        </center>
-        <div id="cd-timeline" className="cd-container">
-          {info.por.map((e)=>{
-            return(
-              <div key={e.title} className="cd-timeline-block">
-                <div className="cd-timeline-img cd-picture">
-                  <img src={star} alt='star'></img>
-                </div>
-                <div className="cd-timeline-content">
-                  <h2>{e.title}</h2>
-                  <p style={{fontWeight:'bold',marginTop:'-10px'}}>{e.subTitle}</p>
-                  <ul>
-                    <li>{e.sum}</li>
-                  </ul>
-                  <span className="cd-date bold">{e.time}</span>
-                </div>
-              </div>
-            )
-          })}
-        </div>
       </div>
     );
   };
