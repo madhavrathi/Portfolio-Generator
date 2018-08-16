@@ -89,7 +89,7 @@
 }
 
 .bottom_social {
-  margin: 3%;
+  margin: 1%;
 }
 
 .intro_wrapper {
@@ -99,7 +99,7 @@
 .title{
   margin: 3%;
   color:white;
-  font-family:'Montserrat', sans-serif;
+  font-family:'Roboto', sans-serif;
   font-size:40px;
   line-height:40px;
   padding:0 10px;
@@ -135,11 +135,8 @@
 
 @media only screen and (max-width: 700px){
   .my_image {
-    margin: 10% 30% 0% 30%;
+    margin: 30% 30% 0% 30%;
     width: 40%;
-  }
-  .bottom_social {
-    margin: 5% 0.1%;
   }
   .title{
     margin: 10%;
@@ -148,13 +145,17 @@
     margin: 1%;
   }
   .btn_r {
-    margin: 10%;
+    margin: 5%;
   }
   .project_section {
     margin-top: 3em;
   }
 }
 @media only screen and (max-width: 360px){
+  .my_image {
+    margin: 30% 0% 0% 0%;
+    width: 40%;
+  }
   .name {
     line-height: 50px;
   }
