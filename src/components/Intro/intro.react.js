@@ -27,7 +27,7 @@ class intro extends Component {
             </Modal.Content>
           </Modal> */}
           <center>
-            <a target="_blank" href="https://drive.google.com/file/d/15RubU7d2lfBsTv7sYGICcPm_HNgLwwlK/view?usp=sharing" className="btn_r btn-1 btn-1e">RESUME</a>
+            <a target="_blank" href="https://drive.google.com/file/d/1_8qKXh0SB4k4VENjOij2GmRYVkfMpgGe/view?usp=sharing" className="btn_r btn-1 btn-1e">RESUME</a>
           </center>
           <center className='bottom_social'>
             {(info.social.facebook !== '')?<Button className='raise' circular target='_blank' href={info.social.facebook} color='facebook' size='big' icon='facebook' />:''}
