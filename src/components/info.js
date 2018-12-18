@@ -37,9 +37,15 @@ var info = {
   ],
   'experience':[
     {
+      'title':'Teaching Assistant',
+      'subTitle':'Coding Ninjas India',
+      'time':'Oct 2018 - Present',
+      'sum':'Monitoring students performance in Data Structures and Algorithms course with C++. Providing one on one guidance for assignments and queries within the lecture.',
+    },
+    {
       'title':'Google Summer of Code - Mentor',
       'subTitle':'FOSSASIA',
-      'time':'May 2018 - Present',
+      'time':'May 2018 - Aug 2018',
       'sum':'Mentoring College students working on SUSI.AI webchat during GSoC ‘18 for FOSSASIA organisation.',
     },
     {
@@ -101,7 +107,7 @@ var info = {
       'instagram':'',
       'github':'https://github.com/madhavrathi',
       'twitter':'',
-      'linkedin':'https://www.linkedin.com/in/madhav-rathi-120b57129/'
+      'linkedin':'https://www.linkedin.com/in/mdhvrthi/'
     }
 }
 export default info;
