@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import info from '../info.js';
-import work from '../../images/work.png';
 
 class Work extends Component {
 
@@ -24,7 +23,7 @@ class Work extends Component {
             return(
               <div key={e.title} className="cd-timeline-block">
                 <div className="cd-timeline-img cd-picture">
-                  <img src={work} alt='work'></img>
+                  <img src={e.image} alt='work'></img>
                 </div>
                 <div className="cd-timeline-content">
                   <h2>{e.title}</h2>

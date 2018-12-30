@@ -23,8 +23,8 @@ class About extends Component {
           {info.education.map((e) =>{
             return(
               <div key={e.title} className="cd-timeline-block">
-                <div className="cd-timeline-img cd-picture">
-                  <img src={education} alt='education'></img>
+                <div className="cd-timeline-img">
+                  <img src={e.image} alt='education'></img>
                 </div>
                 <div className="cd-timeline-content">
                   <h2>{e.title}</h2>

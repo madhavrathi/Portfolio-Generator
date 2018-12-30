@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700,100,200);
 body {
   font-family: 'Raleway', sans-serif;
-  background-color: rgba(0,0,0,.95)
+  background-color: rgb(43, 43, 43);
 }
 
 /* Container */
@@ -180,6 +180,14 @@ body {
 .container a
 {
     color: #FFF;
+    background-image: -webkit-linear-gradient(45deg, #8e24aa 0%, #ff6e40 70%);
+    background-image: -moz-linear-gradient(45deg, #8e24aa 0%, #ff6e40 70%);
+    background-image: -ms-linear-gradient(45deg, #8e24aa 0%, #ff6e40 70%);
+    background-image: -o-linear-gradient(45deg, #8e24aa 0%, #ff6e40 70%);
+    background-image: linear-gradient(45deg, #8e24aa 0%, #ff6e40 70%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
     text-decoration: none;
     font: 20px strasuaregular;
     margin: 0px 10px;
@@ -198,6 +206,12 @@ body {
     height: 2px;
     content: '';
     background: #FFF;
+    color: #FFF;
+    background-image: -webkit-linear-gradient(45deg, #8e24aa 0%, #ff6e40 70%);
+    background-image: -moz-linear-gradient(45deg, #8e24aa 0%, #ff6e40 70%);
+    background-image: -ms-linear-gradient(45deg, #8e24aa 0%, #ff6e40 70%);
+    background-image: -o-linear-gradient(45deg, #8e24aa 0%, #ff6e40 70%);
+    background-image: linear-gradient(45deg, #8e24aa 0%, #ff6e40 70%);
     transition: all 0.3s;
 }
 

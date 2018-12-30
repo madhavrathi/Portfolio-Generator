@@ -26,7 +26,6 @@
 	display: inline-block;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-weight: 700;
 	outline: none;
 	position: relative;
 	-webkit-transition: all 0.3s;
@@ -45,13 +44,19 @@
 
 /* Button 1 */
 .btn-1 {
-	border: 3px solid #fff;
 	color: #fff;
+  box-shadow: -1px 0 0 1px rgba(61, 173, 233, 0.75), -1px -1px 0 1px rgba(94, 142, 226, 0.25), -1px 1px 0 1px rgba(94, 142, 226, 0.25), 0 -1px 0 1px rgba(126, 110, 218, 0.5), 0 1px 0 1px rgba(126, 110, 218, 0.5), 1px -1px 0 1px rgba(159, 79, 211, 0.25), 1px 1px 0 1px rgba(159, 79, 211, 0.25), 1px 0 0 1px rgba(191, 47, 203, 0.75);
+  background: -webkit-linear-gradient(left, #3dade9, #bf2fcb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Button 1e */
 .btn-1e {
 	overflow: hidden;
+  background: -webkit-linear-gradient(left, #3dade9, #bf2fcb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .btn-1e:after {
@@ -59,7 +64,7 @@
 	height: 0;
 	top: 50%;
 	left: 50%;
-	background: #fff;
+	background: rgb(48, 52, 57);
 	opacity: 0;
 	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
 	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
@@ -98,7 +103,7 @@
 
 .title{
   margin: 3%;
-  color:white;
+  color: rgb(163, 167, 166);
   font-family:'Roboto', sans-serif;
   font-size:40px;
   line-height:40px;

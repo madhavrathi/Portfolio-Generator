@@ -1,5 +1,5 @@
 .draw-border {
-  box-shadow: inset 0 0 0 4px #fff;
+  box-shadow: inset 0 0 0 4px rgb(163, 167, 166);;
   color: #58afd1;
   -webkit-transition: color 0.25s 0.08333s;
   transition: color 0.25s 0.08333s;
@@ -52,7 +52,7 @@
   text-decoration: none;
   user-select: none;
   letter-spacing: 1px;
-  color: white;
+  color: rgb(163, 167, 166);;
   padding: 1em 2em;
   letter-spacing: 0.05rem;
 }
@@ -109,8 +109,8 @@ img {
   }
 }
 .card {
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 0.25rem;
+  background-color: rgb(48, 52, 57);
+  border-radius: 0.5em;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,7 +159,7 @@ img {
   }
 }
 .card__title {
-  color: #fff;
+  color: rgb(163, 167, 166);
   font-weight: bolder;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -171,6 +171,7 @@ img {
   text-transform: uppercase;
 }
 .card__text {
+  color: rgb(163, 167, 166);
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
