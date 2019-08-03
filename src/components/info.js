@@ -10,6 +10,7 @@ import gci from '../images/gci.png'
 import gsoc from '../images/gsoc.png'
 import fossasia from '../images/fossasia.png'
 import codingninjas from '../images/codingninjas.png'
+import amazon from '../images/amazon.png'
 var info = {
   'education':[
     {
@@ -45,9 +46,16 @@ var info = {
   ],
   'experience':[
     {
+      'title':'Software Engineer Intern',
+      'subTitle':'Amazon',
+      'time':'May 2019 - Aug 2019',
+      'sum':'Worked with Tax operations team. Designed Seller Delight Module for proactive reimbursement of underpaid sellers of Amazon.',
+      'image':amazon,
+    },
+    {
       'title':'Teaching Assistant',
       'subTitle':'Coding Ninjas India',
-      'time':'Oct 2018 - Present',
+      'time':'Oct 2018 - Feb 2019',
       'sum':'Monitoring students performance in Data Structures and Algorithms course with C++. Providing one on one guidance for assignments and queries within the lecture.',
       'image':codingninjas,
     },

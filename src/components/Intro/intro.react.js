@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import $ from "jquery";
-import madhav from '../../images/Madhav.jpeg';
+import madhav from '../../images/Madhav.jpg';
 import { Button} from 'semantic-ui-react';
 import './css/intro.css';
 import info from '../info.js';
