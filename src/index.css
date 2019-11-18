@@ -12,20 +12,20 @@ body {
   -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
-  background-color: rgb(48, 52, 57);
+  background-color: #1d2224;
 }
 
 h1 {
   font: 400 2rem 'Montserrat', sans-serif;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-
+  font-family: brandon-grotesque,Avenir Next,Helvetica Neue,Helvetica,Arial,sans-serif;
   color: #ffffff;
-  background-image: -webkit-linear-gradient(45deg, #8e24aa 0%, #ff6e40 70%);
-  background-image: -moz-linear-gradient(45deg, #8e24aa 0%, #ff6e40 70%);
-  background-image: -ms-linear-gradient(45deg, #8e24aa 0%, #ff6e40 70%);
-  background-image: -o-linear-gradient(45deg, #8e24aa 0%, #ff6e40 70%);
-  background-image: linear-gradient(45deg, #8e24aa 0%, #ff6e40 70%);
+  background-image: -webkit-linear-gradient(45deg, #7e9199 0%, #43a699 70%);
+  background-image: -moz-linear-gradient(45deg, #7e9199 0%, #43a699 70%);
+  background-image: -ms-linear-gradient(45deg, #7e9199 0%, #43a699 70%);
+  background-image: -o-linear-gradient(45deg, #7e9199 0%, #43a699 70%);
+  background-image: linear-gradient(45deg, #7e9199 0%, #43a699 70%);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -34,7 +34,6 @@ h1 {
 
 @media (max-width: 350px) {
   h1 {
-    font: 300 2rem 'Montserrat', sans-serif;
     letter-spacing: 0em;
     text-transform: uppercase;
   }

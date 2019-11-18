@@ -17,7 +17,9 @@ class intro extends Component {
         <div className='section'>
           <center><img className='my_image' src={madhav} alt='Madhav'></img></center>
           <center className="title">
-            Hello, I am Madhav Rathi
+            <span className="main_title">madhav rathi</span>
+            <p>{'{developer & caffeine addict}'}</p>
+
           </center>
           {/* <Modal trigger={(<center>
                             <button className="btn_r btn-1 btn-1e">RESUME</button>

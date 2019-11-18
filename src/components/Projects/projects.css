@@ -1,6 +1,6 @@
 .draw-border {
-  box-shadow: inset 0 0 0 4px rgb(163, 167, 166);;
-  color: #58afd1;
+  box-shadow: inset 0 0 0 4px #7e9199;;
+  color: #015565;
   -webkit-transition: color 0.25s 0.08333s;
   transition: color 0.25s 0.08333s;
   position: relative;
@@ -25,10 +25,10 @@
   border-right-width: 4px;
 }
 .draw-border:hover {
-  color: #58afd1;
+  color: #015565;
 }
 .draw-border:hover::before, .draw-border:hover::after {
-  border-color: #58afd1;
+  border-color: #015565;
   -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
   transition: border-color 0s, width 0.25s, height 0.25s;
   width: 100%;
@@ -48,11 +48,10 @@
   border: none;
   cursor: pointer;
   line-height: 1.5;
-  font: 100 1rem 'Montserrat', sans-serif;
   text-decoration: none;
   user-select: none;
   letter-spacing: 1px;
-  color: rgb(163, 167, 166);;
+  color: #7e9199;;
   padding: 1em 2em;
   letter-spacing: 0.05rem;
 }
@@ -102,10 +101,6 @@ img {
 	transition: all 600ms ease;
 }
 
-.card__content:hover .card__title {
-	transform: translateY(-100%);
-}
-
 @media (min-width: 40rem) {
   .cards__item {
     width: 50%;
@@ -117,7 +112,8 @@ img {
   }
 }
 .card {
-  background-color: rgb(48, 52, 57);
+  font-family: brandon-grotesque,Avenir Next,Helvetica Neue,Helvetica,Arial,sans-serif;
+  background-color: #1d2224;
   border-radius: 0.5em;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   display: -webkit-box;
@@ -167,19 +163,19 @@ img {
   }
 }
 .card__title {
-  color: rgb(163, 167, 166);
+  color: #7e9199;
   font-weight: bolder;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 .language {
-  color: #615757;
+  color: #015565;
   font-weight: bolder;
   font-size: 0.9em;
   text-transform: uppercase;
 }
 .card__text {
-  color: rgb(163, 167, 166);
+  color: #7e9199;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
